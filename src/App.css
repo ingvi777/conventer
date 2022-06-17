@@ -1,0 +1,501 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic);
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #FFFFDD;
+}
+
+._container {
+  max-width: 1074pxpx;
+  margin: 0 auto;
+}
+
+@media (max-width: 1086px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  ._container {
+    max-width: 360px;
+  }
+}
+
+/*убираем заголовки на 
+маленьких дисплеях*/
+@media (max-width: 767.98px) {
+  .major__header_1, .major__header_2 {
+    display: none;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .major__header_1, .major__header_2 {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*направление колонки*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*выравнивание высоте контеинера*/
+}
+
+/*----------------header----------------*/
+.header__content {
+  width: 1074px;
+  min-height: 10.5vh;
+  background: #FFCC00;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*выравнивание высоте контеинера*/
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*направление колонки по Х colum по y*/
+}
+
+.header {
+  font-family: "Roboto Condensed";
+  color: #663300;
+}
+
+.header__logo {
+  width: 183px;
+  height: 35px;
+  background: #FBED00;
+  border: 1px solid #663300;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*направление колонки по Х colum по y*/
+  margin-left: 15%;
+}
+
+.header__header .header__t1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 3px;
+}
+
+.header__header .header__t2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 3px;
+}
+
+/*----------------main----------------*/
+.page__container {
+  width: 1074px;
+  min-height: 70vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*выравнивание высоте контеинера*/
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*направление колонки по Х colum по y*/
+}
+
+@media (max-width: 767.98px) {
+  .page__container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .page__container {
+    height: 120vh;
+  }
+}
+
+.page__sidebar {
+  width: 32%;
+  height: 70vh;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid #F9CC11;
+  background-color: #F1E8B6;
+}
+
+@media (max-width: 767.98px) {
+  .page__sidebar {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .page__sidebar {
+    height: 120vh;
+  }
+}
+
+.page__major {
+  width: 68%;
+  height: 70vh;
+  border-radius: 10px;
+  border: 1px solid #F9CC11;
+  background-color: #F1E8B6;
+}
+
+@media (max-width: 767.98px) {
+  .page__major {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .page__major {
+    height: 120vh;
+  }
+}
+
+/*----------------sidebar----------------*/
+.page__sidebar {
+  font-family: Roboto Condensed;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.page__t1 {
+  margin-top: 16px;
+  margin-left: 8%;
+  color: #343434;
+}
+
+.page__t2 {
+  margin-top: 16px;
+  margin-left: 10%;
+  color: #343434;
+}
+
+.page__t2 ul {
+  margin: 0;
+  padding-left: 10%;
+}
+
+.page__t2 a {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #663300;
+}
+
+/*----------------page__major----------------*/
+.page__major {
+  font-family: Roboto Condensed;
+  color: #663300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*направление колонки по Х colum по y*/
+}
+
+.major__header_1 {
+  margin-top: 20px;
+  margin-left: 44px;
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.major__header_2 {
+  margin-top: 15px;
+  margin-left: 44px;
+  margin-right: 5px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*----------------page__major----------------*/
+.major__converter {
+  width: 95%;
+  height: 80%;
+  margin: 2.5%;
+  border-radius: 10px;
+  border: 1px solid #F9CC11;
+  background-color: #FFFFBB;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+  .major__converter {
+    height: 95%;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .major__converter {
+    height: 95%;
+  }
+}
+
+.converter__header {
+  margin-left: 15px;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+@media (max-width: 767.98px) {
+  .converter__header {
+    display: none;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .converter__header {
+    display: none;
+  }
+}
+
+.converter__bottom {
+  padding-left: 14px;
+  padding-right: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.converter__bottom .btn1 {
+  display: inline-block;
+  width: 84px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #343434;
+  border: 1px solid #343434;
+  background-color: #FFFFBB;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.converter__bottom .btn2 {
+  display: inline-block;
+  width: 84px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #663300;
+  border: 1px solid #663300;
+  background-color: #FFCC00;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.converter__body {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*направление колонки по Х colum по y row*/
+}
+
+@media (max-width: 767.98px) {
+  .converter__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .converter__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.converter__body .inputs {
+  padding: 3px;
+}
+
+.converter__body input {
+  width: 125px;
+  height: 20px;
+  border: 1px solid #747474;
+  margin: 2px;
+}
+
+.converter__body span {
+  margin-left: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.converter__body .converter__left, .converter__body .converter__right {
+  width: 50%;
+}
+
+.converter__body .inputs__left, .converter__body .inputs__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*выравнивание по контейнеру */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dotted #663300;
+}
+
+/*----------------footer----------------*/
+.footer {
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  color: #666666;
+}
+
+.footer__container {
+  width: 1074px;
+  min-height: 10.5vh;
+  background-color: #F1E8B6;
+  border: 1px solid #F9CC11;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*выравнивание высоте контеинера*/
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+}
+
+.footer__text {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  /*выравнивание по контейнеру */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*направление колонки по Х colum по y*/
+}
+/*# sourceMappingURL=style.css.map */
